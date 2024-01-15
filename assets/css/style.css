@@ -6,7 +6,8 @@
 }
 
 :root {
-  font-size: 62.5%; /* 1 rem = 10px */
+  font-size: 62.5%;
+  /* 1 rem = 10px */
 
   --brand-green: hsl(170, 100%, 26%);
   --brand-green-light: hsl(148, 23%, 89%);
@@ -33,7 +34,7 @@ body {
 }
 
 .wrapper {
-  width: 37.5rem;
+  width: 90rem;
   margin-inline: auto;
   padding-inline: 2.4rem;
 }
@@ -49,7 +50,7 @@ header {
 
 header::before {
   content: "";
-  
+
   display: block;
   position: absolute;
   top: 0;
@@ -158,13 +159,15 @@ header img {
 /*=== === NAVIGATION === ===*/
 nav {
   display: flex;
-  
+
   height: var(--nav-height);
 
   position: fixed;
+  justify-content: center;
+  align-items: center;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  margin-left: 8rem;
 }
 
 nav .wrapper {
@@ -199,7 +202,7 @@ body.menu-expanded {
   overflow: hidden;
 }
 
-body.menu-expanded > :not(nav) {
+body.menu-expanded> :not(nav) {
   display: none;
 }
 
@@ -286,4 +289,20 @@ body.menu-expanded .logo path {
 
 body.menu-expanded button path {
   stroke: white;
+}
+
+.card {
+  padding: 2rem;
+  text-align: center;
+}
+
+/*=== === Footer === ===*/
+footer {
+  margin-top: 2rem;
+  bottom: 0;
+  padding: 2rem;
+  display: block;
+  position: static;
+  background-color: var(--brand-green-light);
+  width: 100%;
 }
