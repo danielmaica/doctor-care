@@ -35,6 +35,7 @@ body {
 
 .wrapper {
   width: 90rem;
+  max-width: 100%;
   margin-inline: auto;
   padding-inline: 2.4rem;
 }
@@ -162,12 +163,11 @@ nav {
 
   height: var(--nav-height);
 
-  position: fixed;
+  position: relative;
   justify-content: center;
   align-items: center;
   top: 0;
   width: 100%;
-  margin-left: 8rem;
 }
 
 nav .wrapper {
